@@ -34,27 +34,18 @@ git clone [here](https://github.com/Mahmoud-Sharabati/STM32F407VG_INA229A_PowerS
    | PB0	| PE2	  |
 
  ### Use INA229 Driver instruction
-1. Initialize the INA229 driver using: INA229_Init(SPI_HandleTypeDef * hspi, TIM_HandleTypeDef *htim)
+1. Define your INA299_Readings variable to be used to store the INA229 readings. The driver uses variable nemed "INA299_Values"
+
+2. Initialize the INA229 driver using: INA229_Init(SPI_HandleTypeDef * hspi, TIM_HandleTypeDef *htim)
 
 	Parameters:
    | hspi | htim |
    |------------|--------- |
    | Connected SPI_HandleTypeDef | Used TIM_HandleTypeDef for delay |
    
-2. Enable/Disable RX pins Interrupt (on RX0B and RX1B pins)
+3. Get the INA229 readings by Get_INA299_Readings() function. The diver project uses the "INA299_Values variable to store reading values into. 
 
-	Two available options:
-   | Enable Interrupts on RX0B and RX1B pins	| Disable Interrupts on RX0B and RX1B pins  |
-   |--------------------------------------------|-------------------------------------------|
-   | _Enable					| _Disable	  			    |
-
-_NOTE: When using the RX interrupts, the interrupt flag MUST be cleared by software using CANSPI_RXB0_CLR Function_
- 
-3. Use Transmission and Receive functions:\
-Transmission Function:\
-`CAN_AddTxMessage(CAN_HeaderTypeDef *tempCanMsg)`\
-Receive Function:\
-`CAN_GetRxMessage(CAN_HeaderTypeDef *tempCanMsg)`
+_NOTE: The INA229 readings in this project can be monitored using the STM32 debugger.
 
 ## Credits
 This driver is based on the work of Daniel Rossi, whose original driver can be found [here](https://github.com/ProjectoOfficial/STM32/tree/main/STM32_MCP2515).
