@@ -21,7 +21,7 @@ git clone [here](https://github.com/Mahmoud-Sharabati/STM32F407VG_INA229A_PowerS
     This driver use SPI2 with the following pins:
     | SPI2_CS       | SPI2_SCK    | SPI2_MISO   |SPI2_MOSI   |
     | ------------- |:-----------:|:-----------:|:----------:|
-    | PE9	    | PB10	  | PC11        | PC2	     |PC3	  |
+    | PE9	    | PB10	  | PC2        | PC3	     |
 
 																		
 	*You only need to modify the name of "Chip-Select pin CS" on your project to be "INA229_SPI_CS".*
