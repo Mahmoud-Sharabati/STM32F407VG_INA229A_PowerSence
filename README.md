@@ -48,7 +48,7 @@ git clone [here](https://github.com/Mahmoud-Sharabati/STM32F407VG_INA229A_PowerS
 _NOTE: The INA229 readings in this project can be monitored using the STM32 debugger.
 
 ## Credits
-This driver is based on the generated code by the SysConfig tool for the TI Sensors. It can be found [here](https://github.com/ProjectoOfficial/STM32/tree/main/STM32_MCP2515](https://www.ti.com/tool/SYSCONFIG).
+This driver is based on the generated code by the SysConfig tool for the TI Sensors. It can be found [here](https://github.com/ProjectoOfficial/STM32/tree/main/STM32_MCP2515](https://www.ti.com/tool/SYSCONFIG)
 
 ## License
 This driver is licensed under the MIT License. See the LICENSE file for details.
