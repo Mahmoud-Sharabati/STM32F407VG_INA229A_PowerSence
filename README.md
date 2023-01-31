@@ -25,7 +25,7 @@ git clone [here](https://github.com/Mahmoud-Sharabati/STM32F407VG_INA229A_PowerS
 
 																		
 	*You only need to modify the name of "Chip-Select pin CS" on your project to be "INA229_SPI_CS".*
-	*Other parameters will be modified automatically when generates the code*
+	*Other parameters will be automatically modified when generates the code*
 
 2. This Board has an optional LED and Buzzer with the following pins:
    | LED	| Buzzer  |
