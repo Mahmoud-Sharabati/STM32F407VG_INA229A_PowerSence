@@ -24,22 +24,23 @@ git clone [here](https://github.com/Mahmoud-Sharabati/STM32F407VG_INA229A_PowerS
     | PE9	    | PB10	  | PC2        | PC3	     |
 
 																		
-	*You only need to modify the name of "Chip-Select pin CS" on your project to be "INA229_SPI_CS".*
-	*Other parameters will be automatically modified when generates the code*
+	*You only need to modify the name of "Chip-Select pin CS" on your project to be "INA229_SPI_CS".*`\
+	*Other parameters will be automatically modified when generates the code*`\
+	*This driver uses TIMER6 for delay purpose. Any other timer can be used after its configuration is done.
 
 2. This Board has an optional LED and Buzzer with the following pins:
    | LED	| Buzzer  |
    |------------|---------|
    | PB0	| PE2	  |
 
- ### Use CAN SPI Driver instruction
-1. Initialize the CAN SPI driver using: CANSPI_Initialize(uint8_t BitRate)
+ ### Use INA229 Driver instruction
+1. Initialize the INA229 driver using: INA229_Init(SPI_HandleTypeDef * hspi, TIM_HandleTypeDef *htim)
 
-	Two Bit Rate options:
-   | 500Kbps	| 250Kbps  |
+	Parameters:
+   | hspi | htim |
    |------------|--------- |
-   | _500KBPS	| _250KBPS |
-       
+   | Connected SPI_HandleTypeDef | Used TIM_HandleTypeDef for delay |
+   
 2. Enable/Disable RX pins Interrupt (on RX0B and RX1B pins)
 
 	Two available options:
