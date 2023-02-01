@@ -26,7 +26,7 @@ git clone [here](https://github.com/Mahmoud-Sharabati/STM32F407VG_INA229A_PowerS
 	#### Notes:																	
 	1. You need to modify the name of "Chip-Select pin CS" on your project to be "INA229_SPI_CS".
 	2. You must modify the SPI parameters as shown in image below
-	![SPI_Configuration](https://user-images.githubusercontent.com/16566502/215982358-93d75cd2-52e9-4006-9e80-7e1970cec760.png)
+	![SPI_Configuration](https://user-images.githubusercontent.com/16566502/215982637-edbc0245-69df-4847-aca3-c270d2754e99.png)
 	3. Other parameters will be automatically modified when generates the code.
 	4. This driver uses TIMER6 for delay purpose. Any other timer can be used after its configuration is done.
 
