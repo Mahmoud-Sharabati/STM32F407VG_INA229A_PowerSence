@@ -24,9 +24,11 @@ git clone [here](https://github.com/Mahmoud-Sharabati/STM32F407VG_INA229A_PowerS
     | PE9	    | PB10	  | PC2        | PC3	     |
 
 	#### Notes:																	
-	1. You only need to modify the name of "Chip-Select pin CS" on your project to be "INA229_SPI_CS".
-	2. Other parameters will be automatically modified when generates the code.
-	3. This driver uses TIMER6 for delay purpose. Any other timer can be used after its configuration is done.
+	1. You need to modify the name of "Chip-Select pin CS" on your project to be "INA229_SPI_CS".
+	2. You must modify the SPI parameters as shown in image below
+	![SPI_Configuration](https://user-images.githubusercontent.com/16566502/215982358-93d75cd2-52e9-4006-9e80-7e1970cec760.png)
+	3. Other parameters will be automatically modified when generates the code.
+	4. This driver uses TIMER6 for delay purpose. Any other timer can be used after its configuration is done.
 
 2. This Board has an optional LED and Buzzer with the following pins:
    | LED	| Buzzer  |
