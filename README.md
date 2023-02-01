@@ -28,9 +28,8 @@ git clone [here](https://github.com/Mahmoud-Sharabati/STM32F407VG_INA229A_PowerS
 	2. You must modify the SPI parameters as shown in image below.
 	\
 	![SPI_Configuration](https://user-images.githubusercontent.com/16566502/215982637-edbc0245-69df-4847-aca3-c270d2754e99.png).
-	\
-	4. Other parameters will be automatically modified when generates the code.
-	5. This driver uses TIMER6 for delay purpose. Any other timer can be used after its configuration is done.
+	3. Other parameters will be automatically modified when generates the code.
+	4. This driver uses TIMER6 for delay purpose. Any other timer can be used after its configuration is done.
 
 2. This Board has an optional LED and Buzzer with the following pins:
    | LED	| Buzzer  |
